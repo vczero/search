@@ -1,0 +1,144 @@
+
+body{
+	width:100%;
+	background-color:#FAFBFB;
+	font-family:"微软雅黑";
+}
+
+
+header div:nth-child(1){
+	position: absolute;
+	left:3px;
+	right: 60px;
+	height:40px;
+}
+
+#search_input{
+	padding-left: 5px;
+	height:40px;
+	width: 100%;
+	border:1px solid #DDDDDD;
+	outline:none;
+	font-size:15px;
+	font-family:'georgia',  "微软雅黑";
+}
+
+header div:nth-child(2){
+	position: absolute;
+	right:3px;
+	width:50px;
+	height:40px;
+}
+#search_btn{
+	width:50px;
+	height:43px;
+	border:0;
+	background-color:#0091FF;
+	border-left:0;
+	border:0;
+	cursor:pointer;
+	outline:none;
+	font-size:15px;
+	color:#FFF;
+}
+
+footer{
+	position:fixed;
+	bottom: 0;
+	left:0;
+	right:0;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	color:#2BB2A3;
+	background-color:#F0EFED;
+}
+
+footer div:nth-child(1){
+	width: 33%;
+	float: left;
+}
+
+footer div:nth-child(2){
+	width: 33%;
+	float: left;
+}
+
+footer div:nth-child(3){
+	width: 33%;
+	float: right;
+}
+
+section{
+	position:absolute;
+	top:64px;
+	width: 100%;
+	border-top:1px solid #CCCCCC;
+	background-color:#FFFFFF;
+	font-size:12px;
+}
+
+.list_item{
+	margin-top:5px;
+	height:100px;
+	border-bottom: 1px solid #A8A8A8;
+}
+
+.list_img{
+	width:94px;
+	height: 94px;
+	/*border:1px solid red;*/
+	text-align:center;
+}
+
+.list_content{
+	width:120px;
+	height: 94px;
+	border:1px solid red;
+}
+.list_other{
+	width:50px;
+	height: 94px;
+	color: #8F8F8F;
+	border:1px solid red;
+}
+
+.list_bookname{
+	font-size:14px;
+	line-height:20px;
+	margin-left:5px;
+}
+
+.list_author{
+	color:#666666;
+	margin-left:5px;
+	height: 43px;
+}
+
+.overflow{
+	overflow: hidden;
+}
+
+.fl{float: left;}
+.fr{float: right;}
+
+.list_bookprice{
+	margin-left:5px;
+	color:#2BB2A3;
+}
+
+.list_price_num{
+	font-size:25px;
+}
+
+.list_other span{
+	position:relative;
+	top:80px;
+}
+
+
+
+
+
+
+
