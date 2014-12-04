@@ -1,0 +1,49 @@
+
+<section ng-controller="BookDetailController">
+<div>
+	<div id="book_detail_info">
+		<div class="fl book_detail_pic">
+			<img class="book_detail_pic" ng-src="{{data.image}}"/>
+		</div>
+		<div class="fl">
+			<div>
+				<span class="book_detail_title">书名：</span><span class="overflow book_detail_t_w">{{data.title}}</span>
+			</div>
+			<div>
+				<span class="book_detail_title">作者：</span><span class="overflow book_detail_t_w">{{data.author[0]}}</span>
+			</div>
+			<div>
+				<span class="book_detail_title">出版社：</span><span class="overflow book_detail_t_w">{{data.publisher}}</span>
+			</div>
+			<div>
+				<span class="book_detail_title">价格：</span><span class="overflow book_detail_t_w">{{data.price}}</span>
+			</div>
+			<div>
+				<span class="book_detail_title">页码：</span><span class="overflow book_detail_t_w">{{data.pages}}页</span>
+			</div>
+		</div>
+	</div>
+	
+	<div>
+		<div class="book_detail_sum">
+			<div>
+				书籍简介
+			</div>
+			<span>
+				{{data.summary}}
+			</span>
+		</div>
+		
+		<div class="book_detail_sum">
+			<div>作者简介</div>
+			<span>
+				{{data.author_intro}}
+			</span>
+		</div>
+	</div>
+</div>
+<div style="height:45px;"></div>
+</section>
+
+
+

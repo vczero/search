@@ -2,7 +2,7 @@
 <html ng-app="app">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, minimal-ui" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 		<title>天天爱搜索</title>
 		<link rel="stylesheet" type="text/css" href="../css/main.css">
 	</head>
@@ -12,7 +12,7 @@
 				<input id="search_input" type="text" placeholder="请输入关键字"/>
 			</div>
 			<div>
-				<input id="search_btn" type="button" value="搜索">
+				<div id="search_btn">搜索</div>
 			</div>
 		</header>
 		
@@ -24,12 +24,13 @@
 			<a>电影</a>
 		</footer>
 		
-		<div style="position:absolute;top:170px;left:110px;z-index:2;">
+		<div id="loading">
 			<img src="../imgs/loading.gif" />
 		</div>
 		
 		<script type="text/javascript" src="../js/angular.js"></script>
 		<script type="text/javascript" src="../js/angular-route.js" ></script>
+		<script type="text/javascript" src="../lib/config.js"></script>
 		<script type="text/javascript" src="../lib/index.js"></script>
 	</body>
 </html>
