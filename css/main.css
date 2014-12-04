@@ -12,6 +12,10 @@ input{
 }
 
 
+a{
+	color: #525252;
+}
+
 header div:nth-child(1){
 	position: absolute;
 	left:3px;
@@ -37,9 +41,9 @@ header div:nth-child(2){
 }
 #search_btn{
 	width:50px;
-	height:43px;
+	height:46px;
 	border:0;
-	margin-left: 2px;
+	margin-left: 6px;
 	background-color:#0091FF;
 	border-left:0;
 	border:0;
@@ -66,6 +70,7 @@ footer{
 
 footer a{
 	cursor: pointer;
+	color: #FFF;
 }
 
 footer a:nth-child(1){
@@ -162,9 +167,6 @@ section .list_item:last-child{
 	height:150px;display:block;
 }
 
-a{
-	color: #525252;
-}
 
 
 
