@@ -2,6 +2,7 @@
 <section ng-controller="BookListController">
 <div>
 	<div class="list_item" ng-repeat="data in list">
+		<a class="list_bookname_a" bookname = "{{data.origin_title}}" href="#/list/{{data.origin_title}}">
 		<div class="list_img overflow fl">
 			<img class="list_img" ng-src="{{data.image}}"/>
 		</div>
@@ -24,8 +25,9 @@
 				{{data.pages}}页
 			</span>
 		</div>
+		</a>
 	</div>
 </div>
-<div style="height: 55px;"></div>
+<div style="height:45px;"></div>
 </section>
 
