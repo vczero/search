@@ -17,8 +17,20 @@ a{
 	color: #525252;
 }
 
+header{
+	position:fixed;
+	z-index:20;
+	height:65px;
+	top:0;
+	left: 0;
+	right:0;
+	background-color:#FAFBFB;
+	border-bottom:1px solid #CCCCCC;
+}
+
 header div:nth-child(1){
 	position: absolute;
+	top:10px;
 	left:3px;
 	right: 60px;
 	height:40px;
@@ -26,28 +38,30 @@ header div:nth-child(1){
 
 #search_input{
 	padding-left: 5px;
-	height:40px;
+	height:36px;
 	width: 100%;
 	border:1px solid #DDDDDD;
 	outline:none;
+	outline-style: none;
 	font-size:15px;
 	font-family:'georgia',  "微软雅黑";
 }
 
 header div:nth-child(2){
 	position: absolute;
+	top:10px;
 	right:3px;
 	width:50px;
 	height:40px;
 }
 #search_btn{
 	width:50px;
-	height:46px;
+	height:36px;
 	line-height:45px;
 	text-align:center;
 	background-color:#0091FF;
 	border-left:0;
-	border:0;
+	border:1px solid #0091FF;
 	cursor:pointer;
 	outline:none;
 	font-size:15px;

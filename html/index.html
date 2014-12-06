@@ -7,12 +7,12 @@
 		<link rel="stylesheet" type="text/css" href="../css/main.css">
 	</head>
 	<body>
-		<header>
+		<header ng-controller="SearchController">
 			<div>
 				<input id="search_input" type="text" placeholder="请输入关键字"/>
 			</div>
 			<div>
-				<div id="search_btn">搜索</div>
+				<input id="search_btn" ng-click="search()" value="搜索"/>
 			</div>
 		</header>
 		
