@@ -3,34 +3,29 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-		<title>天天爱搜索</title>
+		<title>测试Angular</title>
 		<link rel="stylesheet" type="text/css" href="../css/main.css">
 	</head>
 	<body>
-		<header ng-controller="SearchController">
-			<div>
-				<input id="search_input" type="text" placeholder="请输入关键字"/>
-			</div>
-			<div>
-				<input id="search_btn" ng-click="search()" value="搜索"/>
-			</div>
-		</header>
-		
+		<ng-include id="header_div" src="'./view/header_search.html'"></ng-include>
 		<div ng-view></div>
-		
-		<footer>
-			<a >图书</a>
-			<a>音乐</a>
-			<a>电影</a>
+		<!--<div id="footer_div" ng-include="'./view/footer_search.html'"></div>-->
+		<footer ng-controller="MenuController">
+			<a ng-click="bookSearch()">图书</a>
+			<a ng-click="musicSearch()">音乐</a>
+			<a ng-click="movieSearch()">电影</a>
 		</footer>
-		
-		<div id="loading">
+		<div id="loading" ng-show="isNoLoaded">
 			<img src="../imgs/loading.gif" />
 		</div>
-		
+
 		<script type="text/javascript" src="../js/angular.js"></script>
 		<script type="text/javascript" src="../js/angular-route.js" ></script>
-		<script type="text/javascript" src="../lib/config.js"></script>
-		<script type="text/javascript" src="../lib/index.js"></script>
+		<script type="text/javascript" src="../lib/main.js"></script>
+		<script type="text/javascript" src="../lib/bookService.js"></script>
+		<script type="text/javascript" src="../lib/BookController.js"></script>
+		<script type="text/javascript" src="../lib/searchController.js"></script>
+		<script type="text/javascript" src="../lib/menuController.js"></script>
+
 	</body>
 </html>
