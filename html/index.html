@@ -7,8 +7,10 @@
 		<link rel="stylesheet" type="text/css" href="../css/main.css">
 	</head>
 	<body>
+		<div ui-view></div>
+		
 		<ng-include id="header_div" src="'./view/header_search.html'"></ng-include>
-		<div ng-view></div>
+		<div id="scroll" ng-view></div>
 		<!--<div id="footer_div" ng-include="'./view/footer_search.html'"></div>-->
 		<footer ng-controller="MenuController">
 			<a ng-click="bookSearch()">图书</a>
@@ -19,8 +21,13 @@
 			<img src="../imgs/loading.gif" />
 		</div>
 
+
+
 		<script type="text/javascript" src="../js/angular.js"></script>
 		<script type="text/javascript" src="../js/angular-route.js" ></script>
+		<script type="text/javascript" src="../js/angular-ui-router.js"></script>
+		
+		<script type="text/javascript" src="../js/iscroll.js"></script>
 		<script type="text/javascript" src="../lib/main.js"></script>
 		<script type="text/javascript" src="../lib/bookService.js"></script>
 		<script type="text/javascript" src="../lib/BookController.js"></script>
