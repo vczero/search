@@ -1,5 +1,36 @@
-<section>
-hh
+<section ng-controller="musicListController">
+	
+	<div class="music_list_item" ng-repeat="data in musicList">
+		<div class="music_list_circle mlra music_list_mt8">
+			<img class="music_list_circle music_list_circle_img" ng-src="{{data.image}}"/>
+		</div>
+		<div>
+			<div class="fl music_list_part">
+				<span class="music_list_title music_list_left_part">曲目</span>
+				<span class="overflow music_list_tw white_space">{{data.title}}</span>
+			</div>
+			
+			<div class="fr music_list_part">
+				<span class="music_list_title">演唱</span>
+				<span class="overflow music_list_tw white_space">{{data.author[0].name}}</span>
+			</div>
+		</div>
+		
+		<div class="music_list_text_h">
+			<div class="fl music_list_part">
+				<span class="music_list_title music_list_left_part">时间</span>
+				<span class="overflow music_list_tw">{{data.attrs.pubdate[0]}}年</span>
+			</div>
+			
+			<div class="fr music_list_part">
+				<span class="music_list_title">评分</span>
+				<span class="overflow music_list_tw white_space">{{data.rating.average}}</span>
+			</div>
+		</div>
+		
+		<div class="music_list_qudou mlra"><a href="{{data.mobile_link}}">去豆瓣</a></div>
+	</div>
+
 <div style="height:45px;"></div>
 </section>
 

@@ -237,9 +237,70 @@ section .list_item:last-child{
 	display: inline-block;
 }
 
+/*--------music list-----*/
+.music_list_item{
+	margin-top:10px;
+	height:160px;
+	width: 100%;
+	min-width:300px;
+	border:1px solid #F0F0F0;
+	background-color:#FFF;
+	font-size:14px;
+}
 
+.music_list_circle{
+	width:80px;height:80px;
+}
+.music_list_circle_img{
+	border-radius:40px;
+}
 
+.mlra{
+	margin-left:auto;
+	margin-right: auto;
+}
+.music_list_mt8{
+	margin-top:8px;
+}
 
+.music_list_title{
+	color:#007722;
+}
+.music_list_left_part{
+	margin-left:5px;
+}
+.music_list_part{
+	width:150px;
+}
+.white_space{
+	white-space:nowrap;
+}
+.music_list_tw{
+	width:110px;
+}
+
+.music_list_part span{
+	margin-left: 2px;
+	float: left;
+}
+.music_list_text_h{
+	height:40px;
+}
+
+.music_list_qudou{
+	width:60px;height:24px;
+	border-radius:2px;
+	text-align:center;
+	line-height: 24px;
+	margin-top:3px;
+	background-color:#66BA9C;
+	color:#FFF;
+}
+
+.music_list_qudou a{
+	color: #FFF;
+	text-decoration:none;
+}
 
 
 
