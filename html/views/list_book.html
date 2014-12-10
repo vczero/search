@@ -1,6 +1,6 @@
 <section ng-controller="BookListController">
 <div>
-	<div class="list_item" ng-repeat="data in rootList">
+	<div class="list_item" ng-repeat="data in bookList">
 		<a class="list_bookname_a" href="#/book/{{data.id}}">
 		<div class="list_img overflow fl">
 			<img class="list_img" ng-src="{{data.image}}"/>

@@ -302,5 +302,9 @@ section .list_item:last-child{
 	text-decoration:none;
 }
 
+/*-douban music-*/
+.douban_music{
+	font-size:18px;margin-left:5px;color:#66BA9C;margin-top:5px;
+}
 
 
