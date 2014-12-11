@@ -1,4 +1,39 @@
 <section ng-controller="movieListController">
+<div class="movie_list_item" ng-repeat="data in movieList">
+	<div class="fl">
+		<img class="movie_list_wh" ng-src="{{data.casts[0].avatars.medium || '../imgs/movie.png'}}"/>
+	</div>
+	<div class="fl movie_title_div">
+		<div>
+			<span class="movie_list_title">名称</span>
+			<span>{{data.title}}</span>
+		</div>
+		
+		<div>
+			<span class="movie_list_title">演员</span>
+			<span class=" movie_cast_name">{{data.casts[0].name}} {{data.casts[1].name | limitTo:6}}</span>
+		</div>
+		
+		<div>
+			<span class="movie_list_title">评分</span>
+			<span class="movie_score">{{data.rating.average}}</span>
+		</div>
+		
+		<div>
+			<span class="movie_list_title">年份</span>
+			<span>{{data.year}}年</span>
+		</div>
+		
+		<div>
+			<span class="movie_list_title">标签</span>
+			<span>{{data.genres[0]}} {{data.genres[1]}}</span>
+		</div>
+		
+		<div class="movie_qudouban">
+			<a href="{{data.alt}}">去豆瓣</a>
+		</div>
+	</div>
+</div>
 
 <div style="height:45px;"></div>
 </section>

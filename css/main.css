@@ -120,7 +120,7 @@ section{
 .list_item{
 	margin-top:5px;
 	height:150px;
-	border-bottom: 1px solid #A8A8A8;
+	border-bottom: 1px solid #E6E6E6;
 	background-color: #FFF;
 	min-width:290px;
 }
@@ -243,7 +243,7 @@ section .list_item:last-child{
 	height:160px;
 	width: 100%;
 	min-width:300px;
-	border:1px solid #F0F0F0;
+	border:1px solid #E6E6E6;
 	background-color:#FFF;
 	font-size:14px;
 }
@@ -306,5 +306,63 @@ section .list_item:last-child{
 .douban_music{
 	font-size:18px;margin-left:5px;color:#66BA9C;margin-top:5px;
 }
+
+/*movie list*/
+.movie_list_item{
+	font-size:13px;
+	margin-top: 10px;
+	background-color:#FFF;
+	border:1px solid #E6E6E6;
+	height:140px;
+	width: 100%;
+	min-width:300px;
+}
+
+.movie_list_wh{
+	margin-top:5px;
+	margin-left:5px;
+	max-height:130px;
+}
+
+.movie_list_title{
+	margin-left:5px;
+	color: #0091FF;
+}
+.movie_title_div{
+	margin-top:8px;
+	width: 190px;
+}
+
+.movie_score{
+	color:#CA1010;
+}
+
+.movie_cast_name{
+	width:160px;
+	/*display: block;*/
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.movie_qudouban{
+	border:1px solid #0091FF;
+	height:23px;
+	line-height:23px;
+	width: 60px;
+	border-radius:2px;
+	text-align: center;
+	margin-top:12px;
+	margin-left:5px;
+	cursor:pointer;
+}
+
+.movie_qudouban a{
+	text-decoration:none;
+	color:#000;
+}
+
+
+
+
 
 
