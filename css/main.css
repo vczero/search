@@ -189,7 +189,7 @@ section .list_item:last-child{
 }
 
 #loading{
-	position:absolute;top:170px;left:110px;z-index:2;
+	position:absolute;top:170px;left:150px;z-index:2;
 }
 /* book detail*/
 #book_detail_info{
