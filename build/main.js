@@ -125,6 +125,24 @@ app.config(['$stateProvider', '$urlRouterProvider',function($stateProvider, $url
         			controller: ''
         		}
         	}
+        })
+        
+        .state('search',{
+        	url: '/search/:type',
+        	views:{
+        		header:{
+        			templateUrl: '../html/views/search.html',
+        			controller: 'Search'
+        		},
+        		container:{
+        			templateUrl: '',
+        			controller: ''
+        		},
+        		footer:{
+        			templateUrl: '',
+        			controller: ''
+        		}
+        	}
         });
 }]);
 ;
@@ -263,32 +281,51 @@ app.controller('musicListController', ['$rootScope', 'musicList',function($rootS
 	}
 	musicList.getData($rootScope.keywordsObj.music);
 }]);
-;/*搜索*/
-var SearchController = function($scope, $rootScope, $location, bookList, musicList, movieList){
+;/*负责搜索结果的导向*/
+var Search = function($scope, $rootScope, $location, bookList, musicList, movieList){
 	var path = $location.path();
+	$rootScope.isNoLoaded = false;
+	//跳回列表页
 	$scope.search = function(){
 		var keywords = $scope.keywords;
-		if(path.indexOf('/book') !== -1 || path === '/'){
+		if(path.indexOf('/book') !== -1){
 			if(keywords){
 				$rootScope.keywordsObj.book = keywords;
 			}
-			bookList.getData($rootScope.keywordsObj.book);
+			$location.path('/book');
 			
-		}else if(path.indexOf('/music') !== -1 || path === '/music'){
+		}else if(path.indexOf('/music') !== -1){	
 			if(keywords){
 				$rootScope.keywordsObj.music = keywords;
 			}
-			musicList.getData($rootScope.keywordsObj.music);
+			$location.path('/music');
 			
-		}else if(path.indexOf('/movie') !== -1 || path === '/movie'){
+		}else if(path.indexOf('/movie') !== -1){
 			if(keywords){
 				$rootScope.keywordsObj.movie = keywords;
 			}
-			movieList.getData($rootScope.keywordsObj.movie);
+			$location.path('/movie');
 		}
 	};
 };
+Search.$inject = ['$scope', '$rootScope', '$location', 'bookList', 'musicList', 'movieList'];
+app.controller('Search', Search);;/*仅负责搜索页面的打开*/
+var SearchController = function($scope, $rootScope, $location){
+	var path = $location.path();	
+	$scope.goToSearch = function(){
+		if(path.indexOf('/book') !== -1 || path === '/'){
+			$location.path('/search/book');
+			
+		}else if(path.indexOf('/music') !== -1 || path === '/music'){
+			$location.path('/search/music');
+			
+			
+		}else if(path.indexOf('/movie') !== -1 || path === '/movie'){
+			$location.path('/search/movie');
+		}
+	};
+	
+};
 
-SearchController.$inject = ['$scope', '$rootScope', '$location', 'bookList', 'musicList', 'movieList'];
-
+SearchController.$inject = ['$scope', '$rootScope', '$location'];
 app.controller('SearchController', SearchController);

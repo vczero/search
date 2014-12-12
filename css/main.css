@@ -10,11 +10,17 @@ input{
 	-webkit-appearance:none;
 	outline:none;
 	border-radius:0;
+	-webkit-tap-highlight-color:rgba(255,255,255,0);
+}
+
+div{
+	-webkit-tap-highlight-color:rgba(255,255,255,0);
 }
 
 
 a{
 	color: #525252;
+	-webkit-tap-highlight-color:rgba(255,255,255,0);
 }
 
 header{
@@ -359,6 +365,12 @@ section .list_item:last-child{
 .movie_qudouban a{
 	text-decoration:none;
 	color:#000;
+}
+
+@media (max-height:350px) { 
+  footer {
+    display: none;
+  }
 }
 
 

@@ -1,9 +1,9 @@
 
 <header ng-controller="SearchController">
 	<div>
-		<input id="search_input" ng-model="keywords" type="text" placeholder="请输入关键字"/>
+		<input id="search_input" ng-model="keywords" type="text" placeholder="请输入关键字" ng-click="goToSearch()"/>
 	</div>
 	<div>
-		<input type="button" id="search_btn" ng-click="search()" value="搜索"/>
+		<input type="button" id="search_btn" value="搜索"/>
 	</div>
 </header>

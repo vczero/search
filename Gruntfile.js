@@ -11,7 +11,8 @@ module.exports = function(grunt){
         			'./lib/main.js',
         			'./lib/directive/**/*.js',
         			'./lib/service/**/*.js',
-        			'./lib/list/**/*.js'
+        			'./lib/list/**/*.js',
+        			'./lib/search/**/*.js'
         		],
         		dest:'./build/main.js'
         	}
