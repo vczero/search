@@ -285,6 +285,7 @@ app.controller('musicListController', ['$rootScope', 'musicList',function($rootS
 var Search = function($scope, $rootScope, $location, bookList, musicList, movieList){
 	var path = $location.path();
 	$rootScope.isNoLoaded = false;
+//	document.getElementById('search_input').focus();
 	//跳回列表页
 	$scope.search = function(){
 		var keywords = $scope.keywords;
