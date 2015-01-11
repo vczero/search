@@ -1,12 +1,12 @@
 爱搜索 爱生活
 ======  
-网址：[点击](http://vczero.github.io/t/html/index.html#/)      
+网址：[点击](http://vczero.github.io/search/html/index.html#/)      
    
 + 图书
 + 音乐
 + 电影
 
-Angular.js + DouBan APIV2.0    
+Angular.js + DouBan APIV2.0       
 基于豆瓣API的图书、电影、音乐搜索web App    
 
 ######(1)图书检索   
