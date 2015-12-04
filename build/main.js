@@ -208,10 +208,9 @@ app.factory('movieList', ['$rootScope', '$http', 'ServiceConfig', function($root
 			
 			window.movieSearch = function(data){
 				$rootScope.isNoLoaded = false;
-				if(data.subjects && data.subjects.length){
-					$rootScope.movieList = data.subjects;	
+				if(data.subjects && data.subjects.length) {
+					$rootScope.movieList = data.subjects;
 				}
-				console.log(data.subjects);
 			};
 		}
 	};
